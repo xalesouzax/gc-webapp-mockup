@@ -1,0 +1,126 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #212121; }
+
+body p {
+  /* default font configuration */
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121; }
+
+a {
+  text-decoration: none; }
+
+/* START MAIN NAVIGATION ========================================= */
+#main_nav {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  /* list below for preview only */
+  position: fixed;
+  z-index: 10;
+  top: 0; }
+
+#main_nav div {
+  margin-top: 20px; }
+
+#main_nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121; }
+
+#main_nav #me a {
+  border-bottom: 2px solid #212121; }
+
+/* END MAIN NAVIGATION ========================================= */
+/* START PROFILE =============================================== */
+#profile {
+  padding-top: 85px;
+  width: 144px;
+  margin: auto;
+  position: relative; }
+
+#profile #crest {
+  width: 40px;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+
+#profile #profile_picture {
+  width: 100%; }
+
+#username p {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px; }
+
+#status p {
+  /*color: #c2c2c2;*/
+  text-align: center;
+  margin-top: 20px; }
+
+/* END PROFILE ================================================= */
+/* START PHONE AND LOCATION ==================================== */
+#phone_location {
+  margin-top: 25px;
+  margin-left: 15px; }
+
+#phone_location p {
+  display: inline-block;
+  /*color: #c2c2c2;*/ }
+
+/* END PHONE AND LOCATION ====================================== */
+/* START ABOUT ================================================= */
+#feedback {
+  /*color: #c2c2c2;*/
+  margin-left: 15px;
+  margin-top: 25px; }
+
+#version {
+  color: #c2c2c2;
+  margin-left: 15px;
+  margin-top: 25px; }
+
+/* END ABOUT =================================================== */
+/* START LOG-OUT ============================================== */
+#logout {
+  font-weight: 700;
+  color: #FF6C7E;
+  margin-left: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
+/* END LOG-OUT ================================================ */
+/* DIVIDER (LINE) ————————————————————————————————————————————— */
+#line_divider {
+  border-bottom: 1px solid #f0f0f0;
+  margin-top: 25px; }
+
+/* DIVIDER (LINE) —————————————————————————————————————————————— */
+/* DIVIDER ————————————————————————————————————————————————————— */
+#divider {
+  background-color: #f0f0f0;
+  height: 20px;
+  margin-top: 25px; }
+
+/* DIVIDER ————————————————————————————————————————————————————— */

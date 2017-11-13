@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- TESTING FULLSCREEN MOBILE MODE - NOT A "MANIFEST" =============== -->
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<meta name="mobile-web-app-capable" content="yes"> 
+
+<!-- END - TESTING FULLSCREEN MOBILE MODE - NOT A "MANIFEST" ========= -->
+
+	<link rel="stylesheet" href="vendor/css/normalize.css">
+
+	<link rel="stylesheet" href="css/chat_live.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
+
+	<title>Chat Live</title>
+
+</head>
+
+<body>
+
+<!-- START - OPEN FULLSCREEN IN SAFARI / IOS ======================= -->
+
+<script src="vendor/js/safari_openwindow.js"></script>
+
+<!-- END - OPEN FULLSCREEN IN SAFARI / IOS ========================= -->
+
+<!-- START MAIN NAVIGATION ========================================= -->
+	
+	<header id="main_nav">
+
+		<div id="chat">
+			<p id="message_counter">2</p>
+			<a href="home_groups.html">chat</a>
+		</div>
+
+		<div>
+			<a href="matches.html">matches</a>			
+		</div>
+
+		<div>
+			<a href="standings.html">tables</a>
+		</div>
+
+		<div>
+			<a href="me.html">me</a>
+		</div>
+		
+	</header>
+
+<!-- END MAIN NAVIGATION ========================================= -->
+
+<!-- START GROUP INFO BAR ======================================== -->
+
+	<a href="group_info.html">
+
+		<section id="group_info">
+
+			<div id="group">
+				<p>champions league</p>
+			</div>
+
+			<div id="live_tag">
+				<img src="img/live.svg">
+			</div>
+
+			<div id="members">
+				<p>985 people</p>
+			</div>
+
+		</section>
+
+	</a>
+
+<!-- END GROUP INFO BAR ========================================= -->
+
+<!-- START SCORE BAR ============================================ -->
+
+	<section id="score_bar">
+
+		<div id="championship">
+			<p>Champions League — Quarter Finals</p>	
+		</div>
+
+		<div id="score">
+
+			<div id="score_left">
+				<img src="img/crest_left.svg">
+				<p id="club_name">bar</p>
+				<p id="club_score">3</p>
+			</div>
+
+			<div id="time">
+				<p>87</p>
+			</div>
+
+			<div id="score_right">
+				<p id="club_score">3</p>
+				<p id="club_name">mci</p>
+				<img src="img/crest_right.svg">
+			</div>
+
+		</div>
+		
+	</section>
+
+<!-- END SCORE BAR ========================================= -->
+
+<!-- START "LEFT" TEXT MESSAGE MODULE ====================== -->
+
+	<section id="text_module_left">
+
+		<div id="user_thumb">
+			<img id="user_crest" src="img/module_text/user_crest1.svg">
+			<img id="thumb" src="img/module_text/user1.jpg">
+		</div>
+
+		<div>
+			<p id="username">Samuel Richards</p>
+			<p id="timestamp">4:44 PM</p>
+			<p id="text_message">The crowd is completely nuts! No one has ever imagined this match would
+			be so crazy. Messi is magic and Neymar is incredibly inspired today. What a game!</p>
+		</div>
+
+	</section>
+
+<!-- END "LEFT" TEXT MESSAGE MODULE ======================== -->
+
+<!-- START "RIGHT" TEXT MESSAGE MODULE ===================== -->
+
+	<section id="text_module_right">
+
+		<div id="message_textbox_right">
+			<p id="timestamp">4:44 PM</p>
+			<p id="username">Nelson Wayne</p>
+			<p id="text_message">The crowd is completely nuts! No one has ever imagined this match would
+			be so crazy. Messi is magic and Neymar is incredibly inspired today. What a game!</p>
+		</div>
+
+		<div id="user_thumb">
+			<img id="user_crest" src="img/module_text/user_crest2.svg">
+			<img id="thumb" src="img/module_text/user2.jpg">
+		</div>
+
+	</section>
+
+<!-- END "RIGHT" TEXT MESSAGE MODULE ======================= -->
+
+<!-- START DATE SEPARATOR ================================== -->
+
+<section id="date_divider">
+	
+	<div id="line">
+		<p id="date">February 20th</p>
+	</div>
+
+</section>
+
+<!-- END DATE SEPARATOR ==================================== -->
+
+<!-- START "GC" IMAGE MODULE =============================== -->
+
+	<section id="image_module_gc">
+		
+<!-- Start "Thumb, Username and Timestamp" ————————————————— -->
+
+		<div id="sender_info">
+
+			<div id="user_thumb">
+				<img src="img/module_image_gc/gc_thumb.svg">
+			</div>
+
+			<div id="user_info">
+				<p id="username">GolChat Live</p>
+				<p id="timestamp">4:44 PM</p>	
+			</div>	
+
+		</div>
+
+<!-- End "Thumb, Username and Timestamp" ——————————————————— -->
+
+		<div id="module_box">
+			
+<!-- Start Module Header ——————————————————————————————————— -->
+
+			<div id="module_info">
+
+				<div id="score">
+					<img id="crest" src="img/module_image_gc/crest_left.svg">
+
+					<p id="club_name">bar</p>
+					<p id="club_score">3</p>
+
+					<p id="time">80</p>
+
+					<p id="club_score">3</p>
+					<p id="club_name">mci</p>
+
+					<img id="crest" src="img/module_image_gc/crest_right.svg">						
+				</div>
+
+				<div id="info">
+					<p>champions league</p>
+					<p>agg. 4 x 2 — semi finals</p>
+				</div>
+				
+<!-- End Module Header ————————————————————————————————————— -->
+
+				<div id="module_image">
+					<img src="img/module_image_gc/msn_barcelona.jpg">
+				</div>
+
+				<div id="module_text">
+					<p>3rd goal by Barcelona, 45’ — Neymar Jr</p>
+				</div>
+
+			</div>
+
+	</section>
+
+<!-- END "GC" IMAGE MODULE ================================= -->
+
+<!-- START "GC" MATCH MOMENT MODULE ======================== -->
+
+	<section id="moment_module_gc">
+			
+		<div id="sender_info">
+
+			<div id="user_thumb">
+				<img src="img/module_moment_gc/gc_thumb.svg">
+			</div>
+
+			<div id="user_info">
+				<p id="username">GolChat Live</p>
+				<p id="timestamp">4:44 PM</p>	
+			</div>	
+
+		</div>
+
+		<div id="module_box">
+
+			<div id="match_moment">
+				<p>2nd half started</p>					
+			</div>
+
+			<div id="score">
+				<img id="crest" src="img/module_image_gc/crest_left.svg">
+
+				<p id="club_name">bar</p>
+				<p id="club_score">3</p>
+
+				<p id="versus">X</p>
+
+				<p id="club_score">3</p>
+				<p id="club_name">mci</p>
+
+				<img id="crest" src="img/module_image_gc/crest_right.svg">						
+			</div>
+
+			<div id="info">
+				<p>champions league — semi finals — agg. 1 x 0</p>					
+			</div>
+
+		</div>
+
+	</section>
+
+<!-- END "GC" MATCH MOMENT MODULE ========================= -->
+
+<!-- START "GC" TEXT MODULE =============================== -->
+
+	<section id="text_module_gc">
+				
+		<div id="sender_info">
+
+			<div id="user_thumb">
+				<img src="img/module_text_gc/gc_thumb.svg">
+			</div>
+
+			<div id="user_info">
+				<p id="username">GolChat Live</p>
+				<p id="timestamp">4:44 PM</p>	
+			</div>	
+
+		</div>
+
+		<div id="module_box">
+
+	<!-- Start Module Header ——————————————————————————————————— -->
+
+			<div id="module_info">
+
+				<div id="score">
+					<img id="crest" src="img/module_text_gc/crest_left.svg">
+
+					<p id="club_name">bar</p>
+					<p id="club_score">3</p>
+
+					<p id="time">HT</p>
+
+					<p id="club_score">3</p>
+					<p id="club_name">mci</p>
+
+					<img id="crest" src="img/module_text_gc/crest_right.svg">						
+				</div>
+
+				<div id="info">
+					<p>champions league</p>
+					<p>agg. 4 x 2 — semi finals</p>
+				</div>
+				
+			</div>
+
+<!-- End Module Header ————————————————————————————————————— -->
+
+			<div id="module_text">
+
+				<p>Maecenas viverra hendrerit tempus integer porta tincidunt
+				ipsum eu tristique. Donec ullamcorper quam a massa finibus,
+				dapibus nisl fermentum in enim felis, pulvinar ac nisl eu, mattis
+				semper elit. Aenean sapien nibh, condimentum a purus commodo,
+				iaculis convallis quam. Phasellus diam felis congue ut odio in,
+				tempor rutrum</p>
+				
+			</div>
+
+		</div>
+
+	</section>
+
+<!-- END "GC" TEXT MODULE ================================= -->
+
+<!-- START "GC" SUBS MODULE =============================== -->
+
+	<section id="subs_module_gc">
+				
+		<div id="sender_info">
+
+			<div id="user_thumb">
+				<img src="img/module_subs_gc/gc_thumb.svg">
+			</div>
+
+			<div id="user_info">
+				<p id="username">GolChat Live</p>
+				<p id="timestamp">4:44 PM</p>	
+			</div>	
+
+		</div>
+
+		<div id="module_box">
+
+<!-- Start Module Header ——————————————————————————————————— -->
+
+			<div id="module_info">
+
+				<div id="score">
+					<img id="crest" src="img/module_subs_gc/crest_left.svg">
+
+					<p id="club_name">bar</p>
+					<p id="club_score">3</p>
+
+					<p id="time">HT</p>
+
+					<p id="club_score">3</p>
+					<p id="club_name">mci</p>
+
+					<img id="crest" src="img/module_subs_gc/crest_right.svg">						
+				</div>
+
+				<div id="info">
+					<p>champions league</p>
+					<p>agg. 4 x 2 — semi finals</p>
+				</div>
+				
+			</div>
+
+<!-- End Module Header ————————————————————————————————————— -->
+
+			<div id="players">
+
+				<div id="player_in">
+						
+					<div id="player_thumb">
+						<img id="club_crest" src="img/module_subs_gc/club_crest.svg">
+						<img id="thumb" src="img/module_subs_gc/player1.jpg">
+					</div>
+
+					<div id="icon">
+						<img src="img/module_subs_gc/in_icon.svg">
+					</div>
+
+					<p id="action">In</p>
+
+					<p>Neymar Jr, 11</p>
+
+				</div>
+
+				<div id="player_out">
+
+					<div id="player_thumb">
+						<img id="club_crest" src="img/module_subs_gc/club_crest.svg">
+						<img id="thumb" src="img/module_subs_gc/player2.jpg">
+					</div>
+
+					<div id="icon">
+						<img src="img/module_subs_gc/out_icon.svg">
+					</div>
+
+					<p id="action">Out</p>
+
+					<p>Andrés Iniesta, 8</p>
+					
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+<!-- END "GC" SUBS MODULE ================================= -->
+
+<!-- START UNREAD SEPARATOR ================================== -->
+
+<section id="unread_divider">
+	
+	<div id="line">
+		<p id="date">35 Unread Messages</p>
+	</div>
+
+</section>
+
+<!-- END UNREAD SEPARATOR ==================================== -->
+
+<!-- START "GC" CARD MODULE =============================== -->
+
+
+	<section id="cards_module_gc">
+				
+		<div id="sender_info">
+
+			<div id="user_thumb">
+				<img src="img/module_subs_gc/gc_thumb.svg">
+			</div>
+
+			<div id="user_info">
+				<p id="username">GolChat Live</p>
+				<p id="timestamp">4:44 PM</p>	
+			</div>	
+
+		</div>
+
+		<div id="module_box">
+
+<!-- Start Module Header ——————————————————————————————————— -->
+
+			<div id="module_info">
+
+				<div id="score">
+					<img id="crest" src="img/module_subs_gc/crest_left.svg">
+
+					<p id="club_name">bar</p>
+					<p id="club_score">3</p>
+
+					<p id="time">HT</p>
+
+					<p id="club_score">3</p>
+					<p id="club_name">mci</p>
+
+					<img id="crest" src="img/module_subs_gc/crest_right.svg">						
+				</div>
+
+				<div id="info">
+					<p>champions league</p>
+					<p>agg. 4 x 2 — semi finals</p>
+				</div>
+				
+			</div>
+
+<!-- End Module Header ————————————————————————————————————— -->
+
+			<div id="player">
+					
+				<div id="player_thumb">
+					<img id="club_crest" src="img/module_cards_gc/club_crest.svg">
+					<img id="thumb" src="img/module_cards_gc/player1.jpg">
+				</div>
+
+				<div id="icon">
+					<img src="img/module_cards_gc/red_yellow_cards.svg">
+				</div>
+
+				<div id="action">
+					<p id="card">Red Card</p>
+					<p id="for_who">Ilkay Gündogan, 8</p>
+				</div>
+				
+			</div>
+
+		</div>
+
+	</section>	
+
+<!-- END "GC" CARD MODULE ================================= -->
+
+<!-- START "GC" GOAL MODULE =============================== -->
+
+	<section id="goal_module_gc">
+			
+		<div id="sender_info">
+
+			<div id="user_thumb">
+				<img src="img/module_goal_gc/gc_thumb.svg">
+			</div>
+
+			<div id="user_info">
+				<p id="username">GolChat Live</p>
+				<p id="timestamp">4:44 PM</p>	
+			</div>	
+
+		</div>
+
+		<div id="module_box">
+
+			<div id="scorer">
+				
+				<div id="player_thumb">
+					<img id="club_crest" src="img/module_goal_gc/club_crest.svg">
+					<img id="thumb" src="img/module_goal_gc/player1.jpg">
+				</div>
+
+				<p>Neymar Jr, 11</p>
+									
+			</div>
+
+			<div id="goal">
+				
+				<p>goal</p>
+
+			</div>
+
+			<div id="score">
+
+				<img id="crest" src="img/module_goal_gc/crest_left.svg">
+
+				<p id="club_name">bar</p>
+				<p id="club_score_left">3</p>
+
+				<p id="time">80</p>
+
+				<p id="club_score_right">3</p>
+				<p id="club_name">mci</p>
+
+				<img id="crest" src="img/module_goal_gc/crest_right.svg">	
+
+			</div>
+
+			<div id="info">
+
+				<p>champions league — semi finals — agg. 1 x 0</p>					
+			
+			</div>
+
+		</div>
+
+	</section>
+
+<!-- END "GC" GOAL MODULE ================================== -->
+
+<!-- START NEWS MODULE ===================================== -->
+
+<section id="news_module_gc">
+
+	<div id="sender_info">
+
+		<div id="user_thumb">
+			<img src="img/module_moment_gc/gc_thumb.svg">
+		</div>
+
+		<div id="user_info">
+			<p id="username">GolChat Live</p>
+			<p id="timestamp">4:44 PM</p>	
+		</div>	
+
+	</div>
+
+	<div id="module_box">
+
+		<div id="title">
+			<p>The Blues are planning to offer one of their existing keepers
+			a new deal, while they are yet to enter serious talks with their
+			preferred targets</p>
+		</div>
+
+		<div id="text">
+			<p>Manchester City have already started making plans for the
+			goalkeeper position next season, but more transfer targets have
+			been ruled out than ruled in. With Willy Caballero now establishing
+			himself as No.1, around nine months after he was expecting
+			to be sold, it is no surprise that the club are in no rush to see
+			how the rest of the season pans out before making their moves.</p>
+		</div>
+
+		</div>
+
+		<div id="reactions">
+			
+			<div id="up">
+				<img src="img/module_news_gc/thumb_up.png">
+				<p>233</p>
+			</div>
+
+			<div id="down">
+				<img src="img/module_news_gc/thumb_down.png">
+				<p>2</p>
+			</div>
+
+			<div id="lol">
+				<img src="img/module_news_gc/lol.png">
+				<p>2</p>
+			</div>
+
+			<div id="angry">
+				<img src="img/module_news_gc/angry.png">
+				<p>0</p>
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+<br> <!-- for preview only -->
+<br>
+<br>
+<br> <!-- for preview only -->
+
+<!-- END NEWS MODULE ======================================= -->
+
+<!-- START MESSAGE BAR ===================================== -->
+
+	<section id="message_bar">
+		
+		<div id="emoji">
+			<a href=""><img src="img/emoji.svg"></a>
+		</div>
+
+		<div id="textmessage_field">
+			<form action="">
+				<input type="text" placeholder="Type your message"></form>
+			</form>
+		</div>
+
+		<!-- <div id="audio">
+			<img src="img/audio.png">
+		</div> -->
+
+		<div id="more">
+			<a href=""><img src="img/more.svg"></a>
+		</div>
+
+	</section>
+
+<!-- END MESSAGE BAR ======================================= -->
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

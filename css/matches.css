@@ -1,0 +1,195 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #212121; }
+
+body p {
+  /* default font configuration */
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121; }
+
+/* START MAIN NAVIGATION ========================================= */
+#main_nav {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  /*	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);*/
+  background-color: #ffffff;
+  /* list below for preview only */
+  position: fixed;
+  z-index: 10;
+  top: 0; }
+
+#main_nav div {
+  margin-top: 20px; }
+
+#main_nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121; }
+
+#main_nav #matches a {
+  border-bottom: 2px solid #212121; }
+
+/* END MAIN NAVIGATION ========================================= */
+/* START TOP DATE BAR ========================================== */
+#date {
+  margin-top: 54px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+
+#date p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  vertical-align: middle; }
+
+/* END TOP DATE BAR ============================================ */
+/* START MATCH MODULES ======================================= */
+/* Title: Championship ————————————————————————————————————————— */
+#fix_title {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 20px; }
+
+#fix_title #championship {
+  font-weight: 700;
+  width: 100%;
+  text-align: left;
+  display: inline-block;
+  margin-left: 15px; }
+
+#fix_title #round {
+  width: 100%;
+  text-align: right;
+  display: inline-block;
+  color: #c2c2c2;
+  margin-right: 15px; }
+
+/* Row 1 ——————————————————————————————————————————————————————— */
+#match1 {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+
+#match1 #match_state {
+  text-align: center;
+  width: 55px;
+  margin: auto; }
+
+#match1 #match_state #hour {
+  /* simulating hour state */
+  font-size: 12px;
+  text-align: center;
+  width: 35px;
+  margin: auto; }
+
+#match1 #match_state img {
+  width: 35px; }
+
+#match1 #clubs {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px; }
+
+#match1 #crest {
+  display: inline-block;
+  width: 25px;
+  text-align: center; }
+
+#match1 #club_name {
+  display: inline-block; }
+
+#match1 #club1 img {
+  display: inline-block;
+  vertical-align: middle; }
+
+#match1 #club1 p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: 14px; }
+
+#match1 #club2 {
+  margin-top: 5px; }
+
+#match1 #club2 img {
+  display: inline-block;
+  vertical-align: middle; }
+
+#match1 #club2 p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  font-size: 14px; }
+
+#match1 #results {
+  width: 10px;
+  text-align: center;
+  margin-top: 3px; }
+
+#match1 #results p {
+  margin-top: 12px; }
+
+/* END MATCH MODULES ========================================= */
+/* DATE DIVIDER —————————————————————————————————————————————— */
+/*#date_divider {
+
+	margin-top: 15px;
+
+}*/
+#date_divider #divider {
+  background-color: #f0f0f0;
+  height: 20px; }
+
+#date_divider p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/* DATE DIVIDER ——————————————————————————————————————————————— */
+/* DIVIDER (SINGLE) ——————————————————————————————————————————— */
+#divider {
+  background-color: #f0f0f0;
+  height: 20px;
+  margin-top: 10px; }
+
+/* DIVIDER (SINGLE) ——————————————————————————————————————————— */
+/* DIVIDER (LINE) ————————————————————————————————————————————— */
+#line_divider {
+  border-bottom: 1px solid #f0f0f0;
+  margin-top: 10px; }
+
+/* DIVIDER (LINE) —————————————————————————————————————————————— */

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="31px" height="15px" viewBox="0 0 31 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>live</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="group_info-divider" transform="translate(-166.000000, -8.000000)">
+            <g id="diviser">
+                <g id="live" transform="translate(166.000000, 8.000000)">
+                    <rect id="Rectangle-2" fill="#4DB6AC" x="0" y="0" width="31" height="15" rx="2"></rect>
+                    <path d="M7.20302734,9.82324219 L10.3133789,9.82324219 L10.3133789,11 L5.73818359,11 L5.73818359,3.890625 L7.20302734,3.890625 L7.20302734,9.82324219 Z M12.8108398,11 L11.3459961,11 L11.3459961,3.890625 L12.8108398,3.890625 L12.8108398,11 Z M16.8952148,9.23730469 L18.506543,3.890625 L20.1374023,3.890625 L17.6618164,11 L16.1334961,11 L13.6676758,3.890625 L15.2936523,3.890625 L16.8952148,9.23730469 Z M25.1836914,7.91894531 L22.3711914,7.91894531 L22.3711914,9.82324219 L25.6719727,9.82324219 L25.6719727,11 L20.9063477,11 L20.9063477,3.890625 L25.662207,3.890625 L25.662207,5.07714844 L22.3711914,5.07714844 L22.3711914,6.77148438 L25.1836914,6.77148438 L25.1836914,7.91894531 Z" id="LIVE" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

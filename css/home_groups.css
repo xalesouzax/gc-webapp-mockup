@@ -1,0 +1,368 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #212121; }
+
+body p {
+  /* default font configuration */
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121; }
+
+a {
+  text-decoration: none; }
+
+/* START MAIN NAVIGATION ========================================= */
+#main_nav {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  /* list below for preview only */
+  position: fixed;
+  z-index: 10;
+  top: 0; }
+
+#main_nav div {
+  margin-top: 20px; }
+
+#main_nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121; }
+
+#main_nav #chat a {
+  border-bottom: 2px solid #212121; }
+
+/* END MAIN NAVIGATION ========================================= */
+/* START NOTIFICATION HEADER =================================== */
+#not_area {
+  margin-top: 56px;
+  /* for preview only */
+  background: #43cea2;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#43cea2 top, #185a9d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #43cea2, #185a9d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #43cea2, #185a9d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #43cea2, #185a9d);
+  /* Standard syntax (must be last) */ }
+
+#not_area #text {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px; }
+
+#not_area #not_title {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700; }
+
+#not_area p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  text-align: center; }
+
+#close {
+  position: absolute;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px; }
+
+/* END NOTIFICATION HEADER ===================================== */
+/* START GROUPS LIST =========================================== */
+/* Start Row 1 ————————————————————————————————————————————————— */
+#groups_list {
+  margin-top: 20px; }
+
+#groups_list #row1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  /* for layout preview */ }
+
+#groups_list div {
+  display: inline-block; }
+
+#groups_list #row1 #group_thumb {
+  width: 50px;
+  margin-left: 15px;
+  position: relative; }
+
+#groups_list #row1 #group_thumb img {
+  border-radius: 50%; }
+
+#groups_list #row1 #group_thumb p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  /* message counter background */
+  padding: 4px 7px;
+  border-radius: 10px;
+  min-width: 9px;
+  text-align: center;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  height: 21px;
+  box-sizing: border-box;
+  line-height: normal;
+  background-color: #4DB6AC;
+  /* message counter background */
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+#groups_list #row1 #group_preview {
+  width: 100%;
+  text-align: left;
+  display: block;
+  margin-left: 10px; }
+
+#groups_list #row1 #group_name {
+  display: block; }
+
+#groups_list #row1 #sender {
+  display: block; }
+
+#groups_list #row1 #sender div {
+  display: inline-block; }
+
+#groups_list #row1 #more {
+  width: 45px;
+  text-align: right;
+  margin-right: 15px;
+  position: relative; }
+
+#groups_list #row1 #group_name p {
+  font-weight: 700; }
+
+#groups_list #row1 #who p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #c2c2c2; }
+
+#groups_list #row1 #time p {
+  font-size: 14px;
+  color: #c2c2c2; }
+
+#groups_list #row1 #message_preview p {
+  font-size: 14px;
+  color: #c2c2c2; }
+
+#groups_list #row1 #people img {
+  border-radius: 50%;
+  width: 22px;
+  display: inline-block; }
+
+#groups_list #row1 #people {
+  margin-top: 3px; }
+
+#groups_list #row1 #people #thumb2 {
+  position: absolute;
+  right: 0; }
+
+#groups_list #row1 #people #thumb1 {
+  margin-right: 18px; }
+
+/* Start Row 2 ————————————————————————————————————————————————— */
+#groups_list #row2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  /* for layout preview */ }
+
+#groups_list #row2 #group_thumb {
+  width: 50px;
+  margin-left: 15px;
+  position: relative; }
+
+#groups_list #row2 #group_thumb img {
+  border-radius: 50%; }
+
+#groups_list #row2 #group_thumb p {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  /* message counter background */
+  padding: 4px 7px;
+  border-radius: 10px;
+  min-width: 9px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 21px;
+  box-sizing: border-box;
+  line-height: normal;
+  background-color: #4DB6AC;
+  /* message counter background */
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+#groups_list #row2 #group_preview {
+  width: 100%;
+  text-align: left;
+  display: block;
+  margin-left: 10px; }
+
+#groups_list #row2 #group_name {
+  display: block; }
+
+#groups_list #row2 #sender {
+  display: block; }
+
+#groups_list #row2 #sender div {
+  display: inline-block; }
+
+#groups_list #row2 #more {
+  width: 45px;
+  text-align: right;
+  margin-right: 15px;
+  position: relative; }
+
+#groups_list #row2 #group_name p {
+  font-weight: 700; }
+
+#groups_list #row2 #who p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #c2c2c2; }
+
+#groups_list #row2 #time p {
+  font-size: 14px;
+  color: #c2c2c2; }
+
+#groups_list #row2 #message_preview p {
+  font-size: 14px;
+  color: #c2c2c2; }
+
+#groups_list #row2 #more img {
+  display: none; }
+
+#groups_list #row2 #people img {
+  border-radius: 50%;
+  width: 22px;
+  display: inline-block; }
+
+#groups_list #row2 #people {
+  margin-top: 3px; }
+
+#groups_list #row2 #people #thumb2 {
+  position: absolute;
+  right: 0; }
+
+#groups_list #row2 #people #thumb1 {
+  margin-right: 18px; }
+
+/* Start Row 3 ————————————————————————————————————————————————— */
+#groups_list #row3 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  /* for layout preview */ }
+
+#groups_list #row3 #group_thumb {
+  width: 50px;
+  margin-left: 15px;
+  position: relative; }
+
+#groups_list #row3 #group_thumb img {
+  /*	border-radius: 50%; */ }
+
+#groups_list #row3 #group_thumb p {
+  display: none;
+  /*	font-size: 12px;
+	font-weight: 700;
+	color: #ffffff;
+	
+	padding: 5px;
+
+	border-radius: 50%;
+	background-color: #4DB6AC;
+	position: absolute;
+	bottom: 0;
+	right: 0;*/ }
+
+#groups_list #row3 #group_preview {
+  width: 100%;
+  text-align: left;
+  display: block;
+  margin-left: 10px; }
+
+#groups_list #row3 #group_name {
+  display: block; }
+
+#groups_list #row3 #sender {
+  display: block; }
+
+#groups_list #row3 #sender div {
+  display: inline-block; }
+
+#groups_list #row3 #more {
+  width: 45px;
+  text-align: right;
+  margin-right: 15px;
+  position: relative; }
+
+#groups_list #row3 #group_name p {
+  font-weight: 700; }
+
+#groups_list #row3 #who p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #c2c2c2; }
+
+#groups_list #row3 #time p {
+  font-size: 14px;
+  color: #c2c2c2; }
+
+#groups_list #row3 #message_preview p {
+  font-size: 14px;
+  color: #c2c2c2; }
+
+#groups_list #row3 #people img {
+  display: none;
+  /* hide people's thumbnail */ }
+
+#groups_list #row3 #more #join_tag {
+  padding-top: 15px; }
+
+/* END GROUPS LIST ============================================= */
+/* DIVIDER ===================================================== */
+#date_divider {
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px; }
+
+/* DIVIDER ===================================================== */

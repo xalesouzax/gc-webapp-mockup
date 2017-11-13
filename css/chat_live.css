@@ -1,0 +1,985 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: 'Roboto', sans-serif; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #212121; }
+
+body p {
+  /* default font configuration */
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121; }
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none; }
+
+/* START MAIN NAVIGATION ========================================= */
+#main_nav {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border-bottom: 0.5px solid #f0f0f0;
+  background-color: #ffffff;
+  /* list below for preview only*/
+  position: fixed;
+  z-index: 10;
+  top: 0; }
+
+#main_nav div {
+  margin-top: 20px; }
+
+#main_nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #212121; }
+
+#main_nav #chat {
+  position: relative; }
+
+#main_nav #chat a {
+  border-bottom: 2px solid #212121; }
+
+/*message counter*/
+#main_nav #chat p {
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 10px;
+  background-color: #4DB6AC;
+  position: absolute;
+  margin-top: -9px;
+  margin-left: 35px;
+  margin-bottom: 0px; }
+
+/* END MAIN NAVIGATION ========================================= */
+/* START GROUP INFO BAR ======================================== */
+#group_info {
+  margin-top: 55px;
+  /*for preview only*/
+  width: 100%;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  z-index: 2;
+  background-color: #ffffff;
+  border-bottom: 0.5px solid #f0f0f0; }
+
+#group_info div {
+  margin-top: 7px;
+  display: inline-block;
+  width: 100%; }
+
+#group_info p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  color: #c2c2c2; }
+
+#group_info img {
+  width: 32px; }
+
+#group_info #group {
+  text-align: left;
+  margin-left: 16px; }
+
+#group_info #live_tag {
+  text-align: center;
+  width: 100px;
+  margin-top: 5px; }
+
+#group_info #members {
+  text-align: right;
+  margin-right: 16px; }
+
+/* END GROUP INFO BAR ========================================= */
+/* START SCORE BAR ============================================ */
+#score_bar {
+  width: 100%;
+  height: 70px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); }
+
+#score_bar #score {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+
+#score_bar #championship p {
+  font-size: 9px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #c2c2c2;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 5px; }
+
+#score_bar #score_left {
+  text-align: right; }
+
+#score_bar #score_right {
+  text-align: left; }
+
+#score_bar div {
+  width: 100%; }
+
+#score_left img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5%;
+  width: 30px; }
+
+#score_left p {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #212121; }
+
+#score_right img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5%;
+  width: 30px; }
+
+#score_right p {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #212121; }
+
+#score_bar #time {
+  text-align: center;
+  width: 100px; }
+
+#score_bar #time p {
+  margin-top: 7px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #212121; }
+
+#score_bar #club_score {
+  font-weight: 700; }
+
+#score_bar #score_left #club_name {
+  margin-right: 5%; }
+
+#score_bar #score_right #club_name {
+  margin-left: 5%; }
+
+/* END SCORE BAR ========================================= */
+/* START "LEFT" TEXT MESSAGE MODULE ====================== */
+#text_module_left {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  /*just to compose the UI layout*/ }
+
+#text_module_left p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block; }
+
+#text_module_left #user_thumb {
+  position: relative; }
+
+#text_module_left #thumb {
+  border-radius: 50%;
+  width: 40px;
+  margin-left: 10px; }
+
+#text_module_left #user_crest {
+  width: 15px;
+  z-index: 1;
+  position: absolute;
+  margin-top: 26px;
+  right: 0; }
+
+#text_module_left #username {
+  margin-left: 10px;
+  margin-bottom: 2px;
+  font-weight: 700; }
+
+#text_module_left #timestamp {
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+#text_module_left #text_message {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* END "LEFT" TEXT MESSAGE MODULE ======================== */
+/* START "RIGHT" TEXT MESSAGE MODULE ===================== */
+#text_module_right {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin-top: 25px;
+  /*just to compose the UI layout*/ }
+
+#text_module_right p {
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block; }
+
+#text_module_right #user_thumb {
+  position: relative;
+  margin-right: 10px; }
+
+#text_module_right #thumb {
+  border-radius: 50%;
+  width: 40px; }
+
+#text_module_right #user_crest {
+  width: 15px;
+  z-index: 1;
+  position: absolute;
+  margin-top: 26px;
+  right: 0; }
+
+#text_module_right #username {
+  margin-right: 10px;
+  margin-bottom: 2px;
+  font-weight: 700; }
+
+#text_module_right #timestamp {
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+#text_module_right #text_message {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#message_textbox_right {
+  display: block;
+  text-align: right; }
+
+/* END "RIGHT" TEXT MESSAGE MODULE ======================= */
+/* START DATE SEPARATOR ================================== */
+#date_divider {
+  margin-top: 25px;
+  margin-bottom: 0px; }
+
+#date_divider #line {
+  border-bottom: 2px solid #212121;
+  position: relative;
+  height: 10px;
+  text-align: center; }
+
+#date_divider div p {
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  background: white;
+  bottom: -1px;
+  padding: 0 8px;
+  margin: 0; }
+
+/* END DATE SEPARATOR ==================================== */
+/* START "GC" IMAGE MODULE =============================== */
+/* Start "Thumb, Username and Timestamp" ————————————————— */
+#image_module_gc #sender_info div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+  /*just to compose the UI layout*/ }
+
+#image_module_gc p {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #212121; }
+
+#image_module_gc #user_thumb {
+  margin-left: 10px;
+  border-radius: 50%; }
+
+#image_module_gc #username {
+  margin: 0;
+  font-weight: 700; }
+
+#image_module_gc #timestamp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+/* End "Thumb, Username and Timestamp" ——————————————————— */
+#image_module_gc #module_box {
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* Start Module Header ———————————————————————————————————— */
+#module_info #crest {
+  width: 16px;
+  vertical-align: top; }
+
+#module_info #club_name {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121; }
+
+#module_info #club_score {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #212121; }
+
+#module_info #time {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  color: #c2c2c2; }
+
+#module_info p {
+  margin: 0; }
+
+#module_info #score {
+  margin-top: 7px;
+  margin-left: 10px;
+  display: inline-block; }
+
+#module_info #info p {
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: 400;
+  color: #c2c2c2; }
+
+#module_info #info {
+  margin-top: 5px;
+  margin-right: 10px;
+  float: right;
+  text-align: right;
+  display: inline-block; }
+
+#module_info #info p {
+  display: block;
+  vertical-align: middle; }
+
+#module_info #module_text p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* End Module Header ————————————————————————————————————— */
+#module_box #module_image img {
+  max-width: 100%;
+  margin-top: 5px; }
+
+/* END "GC" IMAGE MODULE ================================= */
+/* START "GC" MATCH MOMENT MODULE ======================== */
+#moment_module_gc #sender_info div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+  /*just to compose the UI layout*/ }
+
+#moment_module_gc p {
+  display: inline-block;
+  margin: 0; }
+
+#moment_module_gc #user_thumb {
+  margin-left: 10px;
+  border-radius: 50%; }
+
+#moment_module_gc #username {
+  margin: 0;
+  font-weight: 700; }
+
+#moment_module_gc #timestamp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+#moment_module_gc #module_box {
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center; }
+
+#moment_module_gc #match_moment p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: #212121;
+  text-align: center;
+  margin-top: 15px; }
+
+#moment_module_gc #score {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+#moment_module_gc #score p {
+  vertical-align: middle; }
+
+#moment_module_gc #crest {
+  width: 35px;
+  vertical-align: middle;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#moment_module_gc #club_name {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+  color: #212121; }
+
+#moment_module_gc #club_score {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+  color: #212121;
+  margin-left: 3px;
+  margin-right: 3px; }
+
+#moment_module_gc #versus {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  color: #c2c2c2; }
+
+#moment_module_gc #info p {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #c2c2c2;
+  margin-bottom: 15px; }
+
+/* END "GC" MATCH MOMENT MODULE ========================== */
+/* START "GC" TEXT MOMENT MODULE ========================= */
+#text_module_gc #sender_info div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+  /*just to compose the UI layout*/ }
+
+#text_module_gc p {
+  display: inline-block;
+  margin: 0; }
+
+#text_module_gc #user_thumb {
+  margin-left: 10px;
+  border-radius: 50%; }
+
+#text_module_gc #username {
+  margin: 0;
+  font-weight: 700; }
+
+#text_module_gc #timestamp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+#text_module_gc #module_box {
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#text_module_gc #module_text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #212121;
+  border-top: 1px solid #d9d9d9;
+  padding-top: 5px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  display: inline-block; }
+
+/* END "GC" TEXT MOMENT MODULE =========================== */
+/* START "GC" SUBS MODULE ================================ */
+#subs_module_gc #sender_info div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+  /*just to compose the UI layout*/ }
+
+#subs_module_gc p {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #212121;
+  margin: 0; }
+
+#subs_module_gc #user_thumb {
+  margin-left: 10px;
+  border-radius: 50%; }
+
+#subs_module_gc #username {
+  margin: 0;
+  font-weight: 700; }
+
+#subs_module_gc #timestamp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+#subs_module_gc #module_box {
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#subs_module_gc #players {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding-top: 10px; }
+
+#subs_module_gc #player_thumb {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+#subs_module_gc #icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px; }
+
+#subs_module_gc #action {
+  font-weight: 700;
+  vertical-align: middle;
+  margin-left: 5px; }
+
+#subs_module_gc #player_thumb #club_crest {
+  width: 15px;
+  z-index: 1;
+  position: absolute;
+  margin-top: 26px;
+  right: 0; }
+
+#subs_module_gc #thumb {
+  border-radius: 50%;
+  width: 40px; }
+
+/* END "GC" SUBS MODULE ================================== */
+/* START UNREAD SEPARATOR ================================ */
+#unread_divider {
+  margin-top: 25px;
+  margin-bottom: 0px; }
+
+#unread_divider #line {
+  border-bottom: 2px solid #FF6C7E;
+  position: relative;
+  height: 10px;
+  text-align: center; }
+
+#unread_divider div p {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FF6C7E;
+  display: inline-block;
+  position: relative;
+  background: white;
+  bottom: -1px;
+  padding: 0 8px;
+  margin: 0; }
+
+/* END UNREAD SEPARATOR ================================== */
+/* START "GC" CARDS MODULE =============================== */
+#cards_module_gc #sender_info div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+  /*just to compose the UI layout*/ }
+
+#cards_module_gc p {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #212121;
+  margin: 0; }
+
+#cards_module_gc #user_thumb {
+  margin-left: 10px;
+  border-radius: 50%; }
+
+#cards_module_gc #username {
+  margin: 0;
+  font-weight: 700; }
+
+#cards_module_gc #timestamp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+#cards_module_gc #module_box {
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#cards_module_gc #player {
+  border-top: 1px solid #d9d9d9;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row; }
+
+#cards_module_gc #player_thumb {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+#cards_module_gc #icon {
+  margin-left: 10px;
+  padding-top: 12px; }
+
+#cards_module_gc #card {
+  display: block;
+  font-weight: 700; }
+
+#cards_module_gc #action {
+  padding-top: 3px;
+  margin-left: 10px; }
+
+#cards_module_gc #player_thumb #club_crest {
+  width: 15px;
+  z-index: 1;
+  position: absolute;
+  margin-top: 26px;
+  right: 0; }
+
+#cards_module_gc #thumb {
+  border-radius: 50%;
+  width: 40px; }
+
+/* END "GC" CARDS MODULE ================================= */
+/* START "GC" GOAL MODULE ================================ */
+#goal_module_gc #sender_info div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+  /*just to compose the UI layout*/ }
+
+#goal_module_gc p {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #212121;
+  margin: 0; }
+
+#goal_module_gc #user_thumb {
+  margin-left: 10px;
+  border-radius: 50%; }
+
+#goal_module_gc #username {
+  margin: 0;
+  font-weight: 700; }
+
+#goal_module_gc #timestamp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+#goal_module_gc #module_box {
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#goal_module_gc #player_thumb {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; }
+
+#goal_module_gc #player_thumb #club_crest {
+  width: 15px;
+  z-index: 1;
+  position: absolute;
+  margin-top: 26px;
+  right: 0; }
+
+#goal_module_gc #thumb {
+  /*border: 1px solid #c2c2c2;*/
+  border-radius: 50%;
+  width: 40px; }
+
+#goal_module_gc #scorer {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+#goal_module_gc #scorer p {
+  margin-left: 5px; }
+
+#goal_module_gc #goal {
+  text-align: center; }
+
+#goal_module_gc #goal p {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 118px;
+  font-weight: 100;
+  color: #212121;
+  line-height: 100px; }
+
+#goal_module_gc #club_name {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
+  color: #212121; }
+
+#goal_module_gc #club_score_left {
+  font-size: 22px;
+  font-weight: 700;
+  color: #212121;
+  margin-left: 3px;
+  margin-right: 3px; }
+
+#goal_module_gc #club_score_right {
+  font-size: 22px;
+  font-weight: 400;
+  color: #212121;
+  margin-left: 3px;
+  margin-right: 3px; }
+
+#goal_module_gc #time {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  color: #c2c2c2; }
+
+#goal_module_gc #score {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+#goal_module_gc #score p {
+  vertical-align: middle; }
+
+#goal_module_gc #crest {
+  width: 25px;
+  vertical-align: middle;
+  margin-left: 4px;
+  margin-right: 4px; }
+
+#goal_module_gc #info p {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #c2c2c2;
+  text-align: center; }
+
+#goal_module_gc #info {
+  margin-bottom: 10px;
+  text-align: center; }
+
+/* END "GC" GOAL MODULE ================================== */
+/* START NEWS MODULE ===================================== */
+#news_module_gc #sender_info div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+  /*just to compose the UI layout*/ }
+
+#news_module_gc p {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #212121;
+  margin: 0; }
+
+#news_module_gc #user_thumb {
+  margin-left: 10px;
+  border-radius: 50%; }
+
+#news_module_gc #username {
+  margin: 0;
+  font-weight: 700; }
+
+#news_module_gc #timestamp {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  color: #c2c2c2; }
+
+#news_module_gc #module_box {
+  border-style: solid;
+  border-radius: 8px;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  margin-top: 3px;
+  margin-left: 10px;
+  margin-right: 10px; }
+
+#news_module_gc #title p {
+  font-weight: 700;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+#news_module_gc #text p {
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#news_module_gc #reactions {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px; }
+
+#news_module_gc #reactions div {
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #d9d9d9;
+  border-width: 1px;
+  display: inline-block;
+  margin-right: 5px; }
+
+#news_module_gc #reactions img {
+  width: 20px;
+  vertical-align: middle;
+  margin-left: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px; }
+
+#news_module_gc #reactions p {
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 5px; }
+
+#news_module_gc #reactions #angry p {
+  color: #c2c2c2; }
+
+/* END NEWS MODULE ======================================= */
+/* START MESSAGE BAR ===================================== */
+#message_bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border-top: 0.5px solid #f0f0f0;
+  background-color: #ffffff;
+  z-index: 10; }
+
+#message_bar div {
+  display: inline-block;
+  width: 100%; }
+
+#message_bar #emoji {
+  text-align: center;
+  width: 50px;
+  margin-right: 5px;
+  margin-left: 10px;
+  margin-top: 15px; }
+
+/*#message_bar #audio {
+
+	text-align: right;
+	width: 50px;
+	margin-right: 10px;
+
+}*/
+#message_bar #more {
+  text-align: center;
+  width: 50px;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top: 18px; }
+
+#message_bar #textmessage_field input {
+  width: 100%;
+  border: none;
+  margin-top: 13px;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #212121; }
+
+/* END MESSAGE BAR ======================================= */

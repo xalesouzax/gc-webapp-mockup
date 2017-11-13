@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>smile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="message_bar" transform="translate(-16.000000, -14.000000)">
+            <g id="smile">
+                <g transform="translate(17.000000, 15.000000)">
+                    <circle id="Oval" stroke="#C2C2C2" stroke-width="1.5" cx="11" cy="11" r="11"></circle>
+                    <path d="M5.86760277,13.3059089 C6.65867896,15.369905 8.65873762,16.8352674 11.00105,16.8352674 C13.3662919,16.8352674 15.3825464,15.341075 16.157381,13.2451227" id="Oval" stroke="#C2C2C2" stroke-width="1.5" stroke-linecap="round"></path>
+                    <path d="M13,7.01538615 C13.2002366,7.53782315 13.7064898,7.90873449 14.299374,7.90873449 C14.898062,7.90873449 15.4084147,7.53052573 15.6045402,7" id="Oval" stroke="#C2C2C2" stroke-width="1.5" stroke-linecap="round" transform="translate(14.302270, 7.500000) rotate(-180.000000) translate(-14.302270, -7.500000) "></path>
+                    <circle id="Oval-2" fill="#C2C2C2" cx="7.5" cy="7.5" r="1.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
